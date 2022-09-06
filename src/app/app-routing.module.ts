@@ -6,7 +6,8 @@ const routes: Routes = [
         .then(m => m.AuthenticationModule) 
     }, { path: '', loadChildren: () => import('./users/users.module')
         .then(m => m.UsersModule) 
-    }];
+    },
+    { path: 'chats', loadChildren: () => import('./chats/chats.module').then(m => m.ChatsModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
