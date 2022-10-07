@@ -9,7 +9,7 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 })
 export class SigninComponent implements OnInit {
     signInForm = {
-        username: '',
+        user_email: '',
         password: ''
     }
     constructor(private authServ: AuthenticationService, private router: Router) { }
